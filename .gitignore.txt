@@ -1,0 +1,8 @@
+#Files to Ignore
+Reports.docx
+*.txt
+#Ignore all Js file
+*.js
+
+#Ignore all .png file
+*.png
