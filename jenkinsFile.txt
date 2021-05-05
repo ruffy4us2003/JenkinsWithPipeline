@@ -1,0 +1,32 @@
+pipeline{
+	agent any
+	tools{nodeJS "mynode"}
+	stages{
+	
+		stage("Check Node Versions"){
+		steps{ sh "node --version"
+}
+		
+
+}
+
+		stage("Install Dependencies"){
+		steps{ 
+			sh "npm --version"
+			sh "npm install"			
+}
+}
+		stage("Test"){
+		steps{
+			sh "node app.js"
+}
+}
+		stage("Release the Version"){
+		steps{
+			echo "Releasing the version of the application"
+}
+}
+
+}
+
+}

@@ -1,0 +1,1 @@
+console.log("This is my simple NodeJS App using Pipeline in Jenkins");
